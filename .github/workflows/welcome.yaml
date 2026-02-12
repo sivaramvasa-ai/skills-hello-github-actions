@@ -1,6 +1,1 @@
-name: Post welcome comment
-on:
-  pull_request:
-    types: [push]
-permissions:
-  pull-requests: write
+
