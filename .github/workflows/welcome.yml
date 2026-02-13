@@ -8,3 +8,8 @@ jobs:
   welcome:
     name: Post Welcome Comment
     runs-on: ubuntu-latest
+    steps:
+      - run: gh pr comment "$PR_URL" --body "Welcome to first Lesson"
+      env:
+        GITHUB_TOKEN: ${{ sectrets.GITHUB_TOKEN }}
+        PR_URL: ${{ github.event.pull_request.html_url }}
